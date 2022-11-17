@@ -1,5 +1,5 @@
 let mouseXstart = 300;
-let mouseXend = window.innerWidth;
+let mouseXend = window.innerWidth -300;
 let mouseCurrent =0;
 let range = mouseXend - mouseXstart;
 
