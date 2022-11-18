@@ -1,9 +1,16 @@
+//mouse X position
 let mouseXstart = 300;
 let mouseXend = window.innerWidth -300;
-let mouseCurrent =0;
-let range = mouseXend - mouseXstart;
+let mouseCurrentX =0;
+let rangeX = mouseXend - mouseXstart;
+let fractionXvalue = 0;
 
-
+//mouse Y position
+let mouseYstart = 300;
+let mouseYend = window.innerHeight;
+let mouseCurrentY =0;
+let rangeY = mouseXend - mouseXstart;
+let fractionYvalue = 0;
 
 
 
@@ -11,11 +18,10 @@ let range = mouseXend - mouseXstart;
 const mousemove = (e)=> {
 //    console.log(`x is 
 //     +${e.clientX}`)
-    mouseCurrent = e.clientX -300;
-    fraction = mouseCurrent / range;
+    mouseCurrentX = e.clientX-  mouseXstart;
+    fraction = mouseCurrentX / rangeX;
     console.log(fraction);
-    console.log(mouseXend);
-    console.log(mouseCurrent);
+    //  
 
 
     }
